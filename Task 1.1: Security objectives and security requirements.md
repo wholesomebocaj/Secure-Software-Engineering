@@ -52,9 +52,9 @@ The CMS must implement mechanisms to prevent malicious user from overwhelming th
 
 | **Security Requirement** | **Description** | **CIA** | **OWASP ASVS** |
 | --- | --- | --- | --- |
-| SR1 - Enforce tenant-based access control | Each request must verify the user's organisation and role to prevent cross-tenant access to complaint data. | Confidentiality | V8.2 Authorization |
-| SR2 - Validate and sanitise input | All complaint form inputs must be validated to prevent injection attacks and malicious data modification. | Integrity | V5 Input Validation |
+| SR1 - Enforce tenant-based access control | Each request must verify the user's organisation and role to prevent cross-tenant access to complaint data. | Confidentiality | V8.2 General Authorization Design: 8.2.1 |
+| SR2 - Validate and sanitise input | All complaint form inputs must be validated to prevent injection attacks and malicious data modification. | Integrity | V1.2 Injection Prevention: 1.2.4 |
 | SR3 - Secure authentication | Users must authenticate using strong password policies and secure session management. | Confidentiality | V2 Authentication |
 | SR4 - Encrypt sensitive data | Complaint data and personal information must be encrypted during transmission and storage. | Confidentiality | V9 Data Protection |
-| SR5 - Implement logging and monitoring | Security events such as login attempts and complaint updates must be logged to detect tampering or misuse. | Integrity | V7 Logging |
-| SR6 - Implement rate limiting | The system must limit excessive requests to prevent denial-of-service attacks and maintain service availability. | Availability | V4 Access Control |
+| SR5 - Implement logging and monitoring | Security events such as login attempts and complaint updates must be logged to detect tampering or misuse. | Integrity | V7 Logging and Monitoring |
+| SR6 - Implement rate limiting | The system must limit excessive requests to prevent denial-of-service attacks and maintain service availability. | Availability | V4 Access Control / Resource Protection |
